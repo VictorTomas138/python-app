@@ -4,7 +4,7 @@ import io
 
 
 uploaded_files = st.file_uploader(
-    "Escoge archivos",
+    "Escoge los archivos",
     accept_multiple_files=True)
 
 if len(uploaded_files) > 0:
@@ -18,7 +18,7 @@ if len(uploaded_files) > 0:
             images.append(img)
 
         file_name = st.text_input(
-            "Ingrese el nomnre del archivo:", "Archivo.pdf")
+            "Modifique el nombre del archivo:", "Archivo.pdf")
 
         images[0].save(
             file_name,
